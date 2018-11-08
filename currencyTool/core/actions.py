@@ -44,7 +44,7 @@ class UpdateForeignerExchangeRates(Action):
                 db.update(
                     {'base': base_currency},
                     response)
-                )
+                    
         except Exception as e:
             print(e)
         finally:
