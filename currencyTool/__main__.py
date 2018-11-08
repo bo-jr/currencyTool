@@ -18,7 +18,7 @@ def main():
         exchange_rates = db.find_one({'base': base_currency})
 
         if exchange_rates is None:
-            print(('Fetching exchange rates from fixer.io [base currency: {base_currency}'))
+            print((f'Fetching exchange rates from fixer.io [base currency: {base_currency}'))
 
             try:
                 response = fetch_exchange_rates_by_currency(base_currency)
